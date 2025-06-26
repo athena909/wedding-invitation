@@ -1,3 +1,27 @@
+body {
+  background-color: #403F2B;
+}
+a {
+  font-family: Avenir Light;
+  color: #F3F1C4;
+  font-size: 16px;
+}
+p {
+  font-family: 'Avenir Light';
+  font-weight: lighter;
+  font-size: 20px;
+}
+h1,h2 {
+  font-family: 'Fraunces';
+  font-size: 70px;
+  font-weight: light;
+}
+.main-img {
+  width: 125vh;
+  height: 70vh;
+  object-fit: cover;
+  margin-top: 30px;
+}
 .App {
   text-align: center;
 }
@@ -14,18 +38,28 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: rgb(18 30 16); */
+  /* background-color: #2B3E34; */
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #F3F1C4;
+}
+.mid-nav {
+  justify-content: center;
+}
+.navbar.sticky-top {
+  background-color: #403F2B;
+}
+.header-con {
+  margin-top: 70px;
+}
+.main-body {
+  min-height: 100vh;
+  padding: 100px;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #DADED8;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +69,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@font-face {
+  font-family: 'Avenir Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Light'), url('//font/Avenir Light.ttf') format('ttf');
 }
